@@ -1,0 +1,340 @@
+:root {
+    --main-color: #1f5998; /* Azul petróleo */
+    --secondary-color: #ffffff;
+    --accent-color: #ffffff; /* Azul claro */
+    --font-family: 'Arial', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+}
+
+.header {
+    background-color: var(--main-color);
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.nav {
+    text-align: right;
+}
+
+.nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-color: var(--accent-color);
+    color: var(--main-color);
+}
+
+.hero .btn {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.services, .team, .contact {
+    padding: 60px 0;
+}
+
+.services h2, .team h2, .contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.service {
+    background-color: var(--accent-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    color: var(--main-color);
+}
+
+.service2 {
+    background-color: var(--accent-color);
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    flex: 1;
+    color: var(--main-color);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+.justificado{
+    text-align: justify;
+}
+
+.team-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-item {
+    flex: 1;
+    padding: 10px;
+    background-color: #eff1f3;
+    /* Fondo claro para resaltar */
+    border-radius: 10px;
+    color: #090909;
+    /* Texto oscuro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.justificado {
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .team-content {
+        flex-direction: column;
+    }
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contact-item {
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    /* Fondo claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item h3 {
+    color: #004d61;
+    /* Azul petróleo */
+    margin-bottom: 10px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #00a3cc;
+    /* Azul claro */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #004d61;
+    /* Cambio al azul petróleo al pasar el cursor */
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+    }
+}
+
+.team-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.member {
+    flex: 1;
+    padding: 15px;
+    background-color: #f4f4f4;
+    /* Fondo claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.member img {
+    width: 80px;
+    /* Tamaño reducido */
+    height: 80px;
+    /* Tamaño reducido */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.member h3 {
+    color: #004d61;
+    /* Azul petróleo */
+    margin-bottom: 10px;
+}
+
+.member p {
+    color: #333;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .team-columns {
+        flex-direction: column;
+    }
+}
+
+/* Estilos para la sección de proyectos */
+.projects {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.projects .container {
+    text-align: center;
+}
+
+.projects-list {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.project-item {
+    flex: 0 0 auto;
+    width: 200px;
+    /* Ajusta el tamaño de cada item */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    /* Limita el tamaño de la imagen */
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-weight: bold;
+    color: #333;
+}
+
+.hero {
+    background-image: url('../images/logo.webp');
+    /* Ruta de tu imagen de fondo */
+    background-size: cover;
+    /* Asegura que la imagen cubra toda el área de la sección */
+    background-position: center;
+    /* Centra la imagen */
+    background-attachment: fixed;
+    /* Mantiene la imagen fija cuando haces scroll */
+    color: #ffffff;
+    /* Cambia el color del texto a blanco para mejor contraste */
+    padding: 100px 0;
+    /* Ajusta el espaciado superior e inferior */
+    text-align: center;
+    /* background-color:rgba(31, 89, 152, 0); */
+    
+    /* Centra el texto */
+}
+
+.hero .btn {
+    background-color: #007BFF;
+    /* Color de fondo del botón */
+    color: white;
+    /* Color del texto del botón */
+    padding: 10px 20px;
+    /* Espaciado dentro del botón */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    text-decoration: none;
+    /* Elimina subrayado del enlace */
+    font-size: 1rem;
+    /* Tamaño del texto en el botón */
+}
+
+.hero .btn:hover {
+    background-color: #0056b3;
+    /* Color del botón cuando pasa el mouse */
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    border-radius: 8PX;
+    /* Tamaño reducido del logo */
+    height: auto;
+    margin-right: 5px;
+    /* Espacio entre el logo y el texto */
+}
